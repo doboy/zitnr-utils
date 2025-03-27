@@ -26,3 +26,15 @@ export interface TimeRange {
 export interface TimeRangeWithOwner extends TimeRange{
   owner: string;
 };
+
+export interface SecuredDoc {
+  times: Array<TimeRangeWithOwner>;
+}
+
+export interface UnreservedDoc {
+  id?: string;
+  date: string;
+  parkId: number;
+  courtId: number;
+  times: Array<TimeRange>;
+}

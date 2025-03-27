@@ -16,7 +16,6 @@ export const combineTimes = (
   ];
    
   if (park.id == MillerPark.id && (dayOfWeek == 1 || dayOfWeek == 3 || dayOfWeek == 5)) {
-    console.log(park.id, MillerPark.id);
     result.push({
       startTime: "10:00:00",
       endTime: "12:00:00",
@@ -25,8 +24,6 @@ export const combineTimes = (
   }
 
   if (park.id == MountBakerPark.id && (dayOfWeek == 2 || dayOfWeek == 4)) {
-    console.log(park.id, MountBakerPark.id);
-
     result.push({
       startTime: "10:00:00",
       endTime: "12:00:00",
