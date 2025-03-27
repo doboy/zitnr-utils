@@ -8,4 +8,4 @@ describe("nowDateString", () => {
       .toFormat("yyyy-MM-dd");
     expect(nowDateString()).toBe(expectedDate);
   });
-  });
+});
