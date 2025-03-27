@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest",
     "prettify": "prettier --write '**/*.ts'",
-    "precommit": "npm run prettify"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/jest": "^29.5.14",
@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@types/luxon": "^3.0.0",
+    "husky": "^8.0.0",
     "prettier": "^2.8.8",
     "typescript": "^5.8.2"
   }
