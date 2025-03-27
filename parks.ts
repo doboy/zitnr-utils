@@ -137,4 +137,3 @@ export const parksById: Record<number, Park> = PARKS.reduce((acc, park) => {
   acc[park.id] = park;
   return acc;
 }, {} as Record<number, Park>);
-

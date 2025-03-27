@@ -21,11 +21,11 @@ export type Park = {
 export interface TimeRange {
   startTime: string;
   endTime: string;
-};
+}
 
-export interface TimeRangeWithOwner extends TimeRange{
+export interface TimeRangeWithOwner extends TimeRange {
   owner: string;
-};
+}
 
 export interface SecuredDoc {
   times: Array<TimeRangeWithOwner>;

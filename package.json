@@ -4,7 +4,8 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "prettify": "prettier --write '**/*.ts'"
+    "prettify": "prettier --write '**/*.ts'",
+    "precommit": "npm run prettify"
   },
   "dependencies": {
     "@types/jest": "^29.5.14",

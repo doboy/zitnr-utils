@@ -3,19 +3,24 @@ import { Park, TimeRange, TimeRangeWithOwner } from "./types";
 import { MillerPark, MountBakerPark } from "./parks";
 
 export const combineTimes = (
-  dateString: string, 
+  dateString: string,
   park: Park,
-  unreservedTimes: TimeRange[], 
-  securedTimes: TimeRange[], 
-) : TimeRangeWithOwner[] => {
+  unreservedTimes: TimeRange[],
+  securedTimes: TimeRange[]
+): TimeRangeWithOwner[] => {
   const dayOfWeek = DateTime.fromISO(dateString).weekday;
 
-  const result : TimeRangeWithOwner[]  = [
-    ...unreservedTimes.map((time) => Object.assign({}, time, { owner: "not reserved" })),
-    ...securedTimes.map((time) => Object.assign({owner: "z.i.t.n.r."}, time)),
+  const result: TimeRangeWithOwner[] = [
+    ...unreservedTimes.map((time) =>
+      Object.assign({}, time, { owner: "not reserved" })
+    ),
+    ...securedTimes.map((time) => Object.assign({ owner: "z.i.t.n.r." }, time)),
   ];
-   
-  if (park.id == MillerPark.id && (dayOfWeek == 1 || dayOfWeek == 3 || dayOfWeek == 5)) {
+
+  if (
+    park.id == MillerPark.id &&
+    (dayOfWeek == 1 || dayOfWeek == 3 || dayOfWeek == 5)
+  ) {
     result.push({
       startTime: "10:00:00",
       endTime: "12:00:00",
@@ -32,7 +37,7 @@ export const combineTimes = (
   }
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
-  
+
   let lastEndTime = park.startTime;
 
   result.forEach((time) => {
@@ -47,9 +52,9 @@ export const combineTimes = (
   });
 
   if (
-    lastEndTime < park.endTime || (
-    park.endTime == "00:00:00" && lastEndTime < "24:00:00"
-  )) {
+    lastEndTime < park.endTime ||
+    (park.endTime == "00:00:00" && lastEndTime < "24:00:00")
+  ) {
     result.push({
       startTime: lastEndTime,
       endTime: park.endTime,
@@ -61,4 +66,3 @@ export const combineTimes = (
 
   return result;
 };
-
