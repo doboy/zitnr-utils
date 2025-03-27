@@ -2,8 +2,6 @@ export type Court = {
   id: number;
   name: string;
   courtNo: string;
-  startTime: string;
-  endTime: string;
 };
 
 export type Park = {
