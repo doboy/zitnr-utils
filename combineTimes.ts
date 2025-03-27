@@ -1,4 +1,3 @@
-import { DateTime } from "luxon";
 import { Park, TimeRange, TimeRangeWithOwner } from "./types";
 import { MillerPark, MountBakerPark } from "./parks";
 
@@ -8,7 +7,7 @@ export const combineTimes = (
   unreservedTimes: TimeRange[],
   securedTimes: TimeRange[]
 ): TimeRangeWithOwner[] => {
-  const dayOfWeek = DateTime.fromISO(dateString).weekday;
+  const dayOfWeek = new Date(dateString).getDay() || 7;
 
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
