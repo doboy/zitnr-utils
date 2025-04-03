@@ -1,17 +1,20 @@
 export type Court = {
   id: number;
-  name: string;
+  canReserve: boolean;
   courtNo: string;
-  parkId: number;
 };
+
+export type CourtWithParkId = Court & {
+  parkId: Park["id"];
+}
 
 export type Park = {
   id: number;
   name: string;
-  courtIds: number[];
+  courts: Court[];
   startTime: string;
   endTime: string;
-  location: {
+  location?: {
     latitude: number;
     longitude: number;
   };
