@@ -1,10 +1,11 @@
 {
   "name": "zitnr-utils",
-  "version": "1.0.8",
-  "main": "index.ts",
+  "version": "1.0.9",
+  "main": "build/index.js",
   "scripts": {
     "test": "jest",
-    "prettier": "prettier --write '**/*.ts'"
+    "prettier": "prettier --write '**/*.ts'",
+    "pub": "yarn test && yarn prettier && yarn tsc && yarn publish"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
