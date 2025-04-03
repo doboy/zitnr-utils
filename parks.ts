@@ -14,10 +14,6 @@ export const MillerPark: Park = {
   }],
   startTime: "07:00:00",
   endTime: "22:00:00",
-  location: {
-    latitude: 47.6207559,
-    longitude: -122.3095551,
-  },
 };
 
 export const MountBakerPark: Park = {
@@ -34,10 +30,6 @@ export const MountBakerPark: Park = {
   }],
   startTime: "06:00:00",
   endTime: "22:00:00",
-  location: {
-    latitude: 47.5795238,
-    longitude: -122.2910945,
-  },
 };
 
 export const BeaconHillPlayfield: Park = {
@@ -54,10 +46,6 @@ export const BeaconHillPlayfield: Park = {
   }],
   startTime: "07:00:00",
   endTime: "21:00:00",
-  location: {
-    latitude: 47.9794797,
-    longitude: -123.4847369,
-  },
 };
 
 export const BitterLakePlayfield: Park = {
@@ -82,10 +70,6 @@ export const BitterLakePlayfield: Park = {
   }],
   startTime: "07:00:00",
   endTime: "21:45:00",
-  location: {
-    latitude: 47.7242562,
-    longitude: -122.3536593,
-  },
 };
 
 export const RainierBeachPlayfield: Park = {
@@ -110,10 +94,6 @@ export const RainierBeachPlayfield: Park = {
   }],
   startTime: "08:30:00",
   endTime: "23:00:00",
-  location: {
-    latitude: 47.5255442,
-    longitude: -122.2757479,
-  },
 };
 
 export const MagnoliaPark: Park = {
@@ -130,10 +110,6 @@ export const MagnoliaPark: Park = {
   }],
   startTime: "04:00:00",
   endTime: "23:30:00",
-  location: {
-    latitude: 47.6414913,
-    longitude: -122.402598,
-  },
 };
 
 export const GreenLakeParkWest: Park = {
@@ -150,10 +126,6 @@ export const GreenLakeParkWest: Park = {
   }],
   startTime: "00:00:00",
   endTime: "00:00:00",
-  location: {
-    latitude: 47.6813315,
-    longitude: -122.3617288,
-  },
 };
 
 export const GreenLakeParkEast: Park = {
@@ -174,10 +146,6 @@ export const GreenLakeParkEast: Park = {
   }],
   startTime: "07:00:00",
   endTime: "21:00:00",
-  location: {
-    latitude: 47.6799735,
-    longitude: -122.3498842,
-  },
 };
 
 export const LowerWoodlandPlayfield: Park = {
@@ -233,30 +201,35 @@ export const LowerWoodlandPlayfield: Park = {
     id: 362,
     courtNo: "10",
     canReserve: false
-  },
-  {
+  }],
+  startTime: "07:00:00",
+  endTime: "22:00:00"
+};
+
+export const LowerWoodlandPlayfieldTennis = 
+{
+  id: 369,
+  name: "Lower Woodland Playfield Tennis",
+  courts: [{
     id: 369,
-    courtNo: "1 - Upper",
+    courtNo: "1",
     canReserve: true,
   }, {
     id: 370,
-    courtNo: "2 - Upper",
+    courtNo: "2",
     canReserve: true,
   }, {
     id: 371,
-    courtNo: "3 - Upper",
+    courtNo: "3",
     canReserve: true,
-  }, {
+  }, 
+  {
     id: 372,
-    courtNo: "4 - Upper",
+    courtNo: "4",
     canReserve: false,
   }],
   startTime: "07:00:00",
   endTime: "21:00:00",
-  location: {
-    latitude: 47.6673973,
-    longitude: -122.3459778,
-  },
 };
 
 export const IngrahamHS: Park = {
@@ -287,12 +260,8 @@ export const IngrahamHS: Park = {
     courtNo: "6",
     canReserve: true,
   }],
-  startTime: "08:30:00",
-  endTime: "23:15:00",
-  location: {
-    latitude: 47.726163,
-    longitude: -122.3405642,
-  },
+  startTime: "10:30:00",
+  endTime: "22:15:00",
 };
 
 export const GarfieldPlayfield: Park = {
@@ -739,8 +708,8 @@ export const RiverviewPlayfield : Park = {
     courtNo: "2",
     canReserve: false,
   }],
-  startTime: "08:30:00",
-  endTime: "23:00:00",
+  startTime: "06:00:00",
+  endTime: "22:00:00",
 };
 
 export const DiscoveryPark : Park = {
@@ -973,6 +942,7 @@ export const PARKS: Park[] = [
   GilmanPlayfield,
   FroulaPlayground,
   BrightonPlayfield,
+  LowerWoodlandPlayfieldTennis,
 ];
 
 export const parksById: Record<number, Park> = PARKS.reduce((acc, park) => {
