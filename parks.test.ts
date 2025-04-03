@@ -228,3 +228,9 @@ describe("PARK_TIMES", () => {
     });
   });
 });
+
+describe("courtsById", () => {
+  it("should have 135", () => {
+    expect(Object.keys(courtsById).length).toBe(135);
+  })
+});
