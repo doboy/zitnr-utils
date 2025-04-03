@@ -104,40 +104,40 @@ export const COURTS: Court[] = [
     parkId: 369,
   },
   {
-    id: 1098,
-    name: "Ingraham HS Tennis Court 4",
-    courtNo: "Court 04",
-    parkId: 1098,
-  },
-  {
     id: 1095,
     name: "Ingraham HS Tennis Court 1",
     courtNo: "Court 01",
-    parkId: 1098,
+    parkId: 1095,
   },
   {
     id: 1096,
     name: "Ingraham HS Tennis Court 2",
     courtNo: "Court 02",
-    parkId: 1098,
+    parkId: 1095,
   },
   {
     id: 1097,
     name: "Ingraham HS Tennis Court 3",
     courtNo: "Court 03",
-    parkId: 1098,
+    parkId: 1095,
+  },
+  {
+    id: 1098,
+    name: "Ingraham HS Tennis Court 4",
+    courtNo: "Court 04",
+    parkId: 1095,
   },
   {
     id: 2695,
     name: "Ingraham HS Tennis Court 5",
     courtNo: "Court 05",
-    parkId: 1098,
+    parkId: 1095,
   },
   {
     id: 2696,
     name: "Ingraham HS Tennis Court 6",
     courtNo: "Court 06",
-    parkId: 1098,
+    parkId: 1095,
   },
 ];
 
