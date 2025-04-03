@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "module": "nodenext",
-    "outDir": "build",
+    "outDir": "dist",
   },
   "ts-node": {
     "compilerOptions": {

@@ -1,7 +1,7 @@
 {
   "name": "zitnr-utils",
   "version": "1.0.10",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "prettier": "prettier --write '**/*.ts'",
