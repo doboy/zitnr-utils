@@ -2,6 +2,7 @@ export type Court = {
   id: number;
   name: string;
   courtNo: string;
+  parkId: number;
 };
 
 export type Park = {
