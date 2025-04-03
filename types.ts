@@ -6,7 +6,7 @@ export type Court = {
 
 export type CourtWithParkId = Court & {
   parkId: Park["id"];
-}
+};
 
 export type Park = {
   id: number;
