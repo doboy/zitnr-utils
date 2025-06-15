@@ -7,7 +7,7 @@ export const combineTimes = (
   unreservedTimes: TimeRange[],
   securedTimes: TimeRange[]
 ): TimeRangeWithOwner[] => {
-  const dayOfWeek = new Date(dateString).getDay() || 7;
+  const dayOfWeek = new Date(dateString).getUTCDay();
 
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
