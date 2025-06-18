@@ -19,8 +19,8 @@ export const MillerPark: Park = {
   endTime: "22:00:00",
   location: {
     latitude: 47.6207559,
-    longitude: -122.3095551
-  }
+    longitude: -122.3095551,
+  },
 };
 
 export const MountBakerPark: Park = {
@@ -42,8 +42,8 @@ export const MountBakerPark: Park = {
   endTime: "22:00:00",
   location: {
     latitude: 47.5795238,
-    longitude: -122.2910945
-  }
+    longitude: -122.2910945,
+  },
 };
 
 export const BeaconHillPlayfield: Park = {
@@ -65,9 +65,8 @@ export const BeaconHillPlayfield: Park = {
   endTime: "21:00:00",
   location: {
     latitude: 47.9794797,
-    longitude: -123.4847369
-  }
-
+    longitude: -123.4847369,
+  },
 };
 
 export const BitterLakePlayfield: Park = {
@@ -99,9 +98,8 @@ export const BitterLakePlayfield: Park = {
   endTime: "21:45:00",
   location: {
     latitude: 47.7242562,
-    longitude: -122.3536593
-  }
-
+    longitude: -122.3536593,
+  },
 };
 
 export const RainierBeachPlayfield: Park = {
@@ -133,8 +131,8 @@ export const RainierBeachPlayfield: Park = {
   endTime: "23:00:00",
   location: {
     latitude: 47.5255442,
-    longitude: -122.2757479
-  }
+    longitude: -122.2757479,
+  },
 };
 
 export const MagnoliaPark: Park = {
@@ -156,8 +154,8 @@ export const MagnoliaPark: Park = {
   endTime: "23:30:00",
   location: {
     latitude: 47.6414913,
-    longitude: -122.402598
-  }
+    longitude: -122.402598,
+  },
 };
 
 export const GreenLakeParkWest: Park = {
@@ -179,8 +177,8 @@ export const GreenLakeParkWest: Park = {
   endTime: "00:00:00",
   location: {
     latitude: 47.6813315,
-    longitude: -122.3617288
-  }
+    longitude: -122.3617288,
+  },
 };
 
 export const GreenLakeParkEast: Park = {
@@ -207,9 +205,8 @@ export const GreenLakeParkEast: Park = {
   endTime: "21:00:00",
   location: {
     latitude: 47.6799735,
-    longitude: -122.3498842
-  }
-
+    longitude: -122.3498842,
+  },
 };
 
 export const LowerWoodlandPlayfield: Park = {
@@ -271,9 +268,8 @@ export const LowerWoodlandPlayfield: Park = {
   endTime: "22:00:00",
   location: {
     latitude: 47.6673973,
-    longitude: -122.3459778
-  }
-
+    longitude: -122.3459778,
+  },
 };
 
 export const LowerWoodlandPlayfieldTennis = {
@@ -344,9 +340,8 @@ export const IngrahamHS: Park = {
   endTime: "22:15:00",
   location: {
     latitude: 47.726163,
-    longitude: -122.3405642
-  }
-
+    longitude: -122.3405642,
+  },
 };
 
 export const GarfieldPlayfield: Park = {
