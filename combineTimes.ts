@@ -1,5 +1,5 @@
 import { Park, TimeRange, TimeRangeWithOwner } from "./types";
-import { MillerPark, MountBakerPark } from "./parks";
+import { GreenLakeParkEast, MillerPark, MountBakerPark } from "./parks";
 
 export const combineTimes = (
   dateString: string,
@@ -8,6 +8,7 @@ export const combineTimes = (
   securedTimes: TimeRange[]
 ): TimeRangeWithOwner[] => {
   const dayOfWeek = new Date(dateString).getUTCDay();
+  const month = new Date(dateString).getUTCMonth();
 
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
@@ -34,6 +35,33 @@ export const combineTimes = (
       owner: "LifeLong Recreation",
     });
   }
+
+  if (park.id == GreenLakeParkEast.id && month == 7) {
+    if (dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) {
+      result.push({
+        startTime: "17:30:00",
+        endTime: "20:15:00",
+        owner: "GLP",
+      });
+    }
+
+    if (dayOfWeek == 3) {
+      result.push({
+        startTime: "15:00:00",
+        endTime: "17:29:00",
+        owner: "GLP",
+      });
+    }
+
+    if (dayOfWeek == 6 || dayOfWeek == 0) {
+      result.push({
+        startTime: "10:00:00",
+        endTime: "13:00:00",
+        owner: "GLP",
+      });
+    }
+  }
+
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
