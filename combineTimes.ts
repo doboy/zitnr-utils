@@ -6,7 +6,7 @@ export const combineTimes = (
   park: Park,
   unreservedTimes: TimeRange[],
   securedTimes: TimeRange[],
-  courtId: number,
+  courtId: number
 ): TimeRangeWithOwner[] => {
   const dayOfWeek = new Date(dateString).getUTCDay();
   const month = new Date(dateString).getUTCMonth() + 1;
@@ -37,7 +37,11 @@ export const combineTimes = (
     });
   }
 
-  if (park.id == GreenLakeParkEast.id && month == 7 && (courtId == park.courts[0].id || courtId == park.courts[2].id)) {
+  if (
+    park.id == GreenLakeParkEast.id &&
+    month == 7 &&
+    (courtId == park.courts[0].id || courtId == park.courts[2].id)
+  ) {
     if (
       dayOfWeek == 1 ||
       dayOfWeek == 2 ||
@@ -63,7 +67,7 @@ export const combineTimes = (
     if (dayOfWeek == 6 || dayOfWeek == 0) {
       result.push({
         startTime: "10:00:00",
-        endTime: "13:00:00",
+        endTime: "14:00:00",
         owner: "GLP",
       });
     }
