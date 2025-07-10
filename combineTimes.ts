@@ -5,10 +5,11 @@ export const combineTimes = (
   dateString: string,
   park: Park,
   unreservedTimes: TimeRange[],
-  securedTimes: TimeRange[]
+  securedTimes: TimeRange[],
+  courtId: number,
 ): TimeRangeWithOwner[] => {
   const dayOfWeek = new Date(dateString).getUTCDay();
-  const month = new Date(dateString).getUTCMonth();
+  const month = new Date(dateString).getUTCMonth() + 1;
 
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
@@ -36,8 +37,14 @@ export const combineTimes = (
     });
   }
 
-  if (park.id == GreenLakeParkEast.id && month == 7) {
-    if (dayOfWeek == 1 || dayOfWeek == 2 || dayOfWeek == 3 || dayOfWeek == 4 || dayOfWeek == 5) {
+  if (park.id == GreenLakeParkEast.id && month == 7 && courtId == park.courts[0].id || courtId == park.courts[2].id) {
+    if (
+      dayOfWeek == 1 ||
+      dayOfWeek == 2 ||
+      dayOfWeek == 3 ||
+      dayOfWeek == 4 ||
+      dayOfWeek == 5
+    ) {
       result.push({
         startTime: "17:30:00",
         endTime: "20:15:00",
@@ -61,7 +68,6 @@ export const combineTimes = (
       });
     }
   }
-
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
