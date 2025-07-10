@@ -37,7 +37,7 @@ export const combineTimes = (
     });
   }
 
-  if (park.id == GreenLakeParkEast.id && month == 7 && courtId == park.courts[0].id || courtId == park.courts[2].id) {
+  if (park.id == GreenLakeParkEast.id && month == 7 && (courtId == park.courts[0].id || courtId == park.courts[2].id)) {
     if (
       dayOfWeek == 1 ||
       dayOfWeek == 2 ||
