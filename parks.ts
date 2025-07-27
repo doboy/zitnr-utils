@@ -3,6 +3,7 @@ import { CourtWithParkId, Park } from "./types";
 export const MillerPark: Park = {
   id: 1373,
   name: "Miller Playfield",
+  slug: "miller-playfield",
   courts: [
     {
       id: 1373,
@@ -22,10 +23,10 @@ export const MillerPark: Park = {
     longitude: -122.3095551,
   },
 };
-
 export const MountBakerPark: Park = {
   id: 1377,
   name: "Mount Baker Park",
+  slug: "mount-baker-park",
   courts: [
     {
       id: 1377,
@@ -49,6 +50,7 @@ export const MountBakerPark: Park = {
 export const BeaconHillPlayfield: Park = {
   id: 1319,
   name: "Beacon Hill Playfield",
+  slug: "beacon-hill-playfield",
   courts: [
     {
       id: 1319,
@@ -72,6 +74,7 @@ export const BeaconHillPlayfield: Park = {
 export const BitterLakePlayfield: Park = {
   id: 1315,
   name: "Bitter Lake Playfield",
+  slug: "bitter-lake-playfield",
   courts: [
     {
       id: 1315,
@@ -105,6 +108,7 @@ export const BitterLakePlayfield: Park = {
 export const RainierBeachPlayfield: Park = {
   id: 1379,
   name: "Rainier Beach Playfield",
+  slug: "rainier-beach-playfield",
   courts: [
     {
       id: 1379,
@@ -138,6 +142,7 @@ export const RainierBeachPlayfield: Park = {
 export const MagnoliaPark: Park = {
   id: 1361,
   name: "Magnolia Park",
+  slug: "magnolia-park",
   courts: [
     {
       id: 1361,
@@ -161,6 +166,7 @@ export const MagnoliaPark: Park = {
 export const GreenLakeParkWest: Park = {
   id: 181,
   name: "Green Lake Park West",
+  slug: "green-lake-park-west",
   courts: [
     {
       id: 181,
@@ -184,6 +190,7 @@ export const GreenLakeParkWest: Park = {
 export const GreenLakeParkEast: Park = {
   id: 2906,
   name: "Green Lake Park East",
+  slug: "green-lake-park-east",
   courts: [
     {
       id: 2906,
@@ -212,6 +219,7 @@ export const GreenLakeParkEast: Park = {
 export const LowerWoodlandPlayfield: Park = {
   id: 353,
   name: "Lower Woodland Playfield",
+  slug: "lower-woodland-playfield",
   courts: [
     {
       id: 353,
@@ -272,9 +280,10 @@ export const LowerWoodlandPlayfield: Park = {
   },
 };
 
-export const LowerWoodlandPlayfieldTennis = {
+export const LowerWoodlandPlayfieldTennis: Park = {
   id: 369,
   name: "Lower Woodland Playfield Tennis",
+  slug: "lower-woodland-playfield-tennis",
   courts: [
     {
       id: 369,
@@ -304,6 +313,7 @@ export const LowerWoodlandPlayfieldTennis = {
 export const IngrahamHS: Park = {
   id: 1095,
   name: "Ingraham HS",
+  slug: "ingraham-hs",
   courts: [
     {
       id: 1095,
@@ -347,6 +357,7 @@ export const IngrahamHS: Park = {
 export const GarfieldPlayfield: Park = {
   id: 1341,
   name: "Garfield Playfield",
+  slug: "garfield-playfield",
   courts: [
     {
       id: 1341,
@@ -366,6 +377,7 @@ export const GarfieldPlayfield: Park = {
 export const VolunteerPark: Park = {
   id: 363,
   name: "Volunteer Park",
+  slug: "volunteer-park",
   courts: [
     {
       id: 363,
@@ -395,6 +407,7 @@ export const VolunteerPark: Park = {
 export const MadronaPlayground: Park = {
   id: 2279,
   name: "Madrona Playground",
+  slug: "madrona-playground",
   courts: [
     {
       id: 2279,
@@ -414,6 +427,7 @@ export const MadronaPlayground: Park = {
 export const SamSmithPark: Park = {
   id: 1391,
   name: "Sam Smith (I90 Lid) Park",
+  slug: "sam-smith-park",
   courts: [
     {
       id: 1391,
@@ -433,6 +447,7 @@ export const SamSmithPark: Park = {
 export const MontlakePlayfield: Park = {
   id: 1375,
   name: "Montlake Playfield",
+  slug: "montlake-playfield",
   courts: [
     {
       id: 1375,
@@ -452,6 +467,7 @@ export const MontlakePlayfield: Park = {
 export const RogersPlayfield: Park = {
   id: 1389,
   name: "Rogers Playfield",
+  slug: "rogers-playfield",
   courts: [
     {
       id: 1389,
@@ -471,6 +487,7 @@ export const RogersPlayfield: Park = {
 export const AYTCOutdoor: Park = {
   id: 279,
   name: "AYTC Outdoor",
+  slug: "aytc-outdoor",
   courts: [
     {
       id: 279,
@@ -510,6 +527,7 @@ export const AYTCOutdoor: Park = {
 export const MadisonPark: Park = {
   id: 1359,
   name: "Madison Park",
+  slug: "madison-park",
   courts: [
     {
       id: 1359,
@@ -548,6 +566,7 @@ export const ObservatoryPark: Park = {
 export const DavidRodgersPark: Park = {
   id: 1330,
   name: "David Rodgers Park",
+  slug: "david-rodgers-park",
   courts: [
     {
       id: 1330,
@@ -572,6 +591,7 @@ export const DavidRodgersPark: Park = {
 export const JeffersonParkLid: Park = {
   id: 777,
   name: "Jefferson Park Lid",
+  slug: "jefferson-park-lid",
   courts: [
     {
       id: 777,
@@ -601,6 +621,7 @@ export const JeffersonParkLid: Park = {
 export const WallingfordPlayfield: Park = {
   id: 1408,
   name: "Wallingford Playfield",
+  slug: "wallingford-playfield",
   courts: [
     {
       id: 1408,
@@ -620,6 +641,7 @@ export const WallingfordPlayfield: Park = {
 export const LaurelhurstPlayfield: Park = {
   id: 1353,
   name: "Laurelhurst Playfield",
+  slug: "laurelhurst-playfield",
   courts: [
     {
       id: 1353,
@@ -649,6 +671,7 @@ export const LaurelhurstPlayfield: Park = {
 export const RainierPlayfield: Park = {
   id: 1383,
   name: "Rainier Playfield",
+  slug: "rainier-playfield",
   courts: [
     {
       id: 1383,
@@ -678,6 +701,7 @@ export const RainierPlayfield: Park = {
 export const SolsticePark: Park = {
   id: 1393,
   name: "Solstice Park",
+  slug: "solstice-park",
   courts: [
     {
       id: 1393,
@@ -717,6 +741,7 @@ export const SolsticePark: Park = {
 export const HiawathaPlayfield: Park = {
   id: 1346,
   name: "Hiawatha Playfield",
+  slug: "hiawatha-playfield",
   courts: [
     {
       id: 1346,
@@ -741,6 +766,7 @@ export const HiawathaPlayfield: Park = {
 export const DelridgePlayfield: Park = {
   id: 1335,
   name: "Delridge Playfield",
+  slug: "delridge-playfield",
   courts: [
     {
       id: 1335,
@@ -760,6 +786,7 @@ export const DelridgePlayfield: Park = {
 export const DearbornPark: Park = {
   id: 1333,
   name: "Dearborn Park",
+  slug: "dearborn-park",
   courts: [
     {
       id: 1333,
@@ -779,6 +806,7 @@ export const DearbornPark: Park = {
 export const BryantPlayground: Park = {
   id: 1325,
   name: "Bryant Playground",
+  slug: "bryant-playground",
   courts: [
     {
       id: 1325,
@@ -798,6 +826,7 @@ export const BryantPlayground: Park = {
 export const AlkiPlayfield: Park = {
   id: 1146,
   name: "Alki Playfield",
+  slug: "alki-playfield",
   courts: [
     {
       id: 1146,
@@ -817,6 +846,7 @@ export const AlkiPlayfield: Park = {
 export const BallardHS: Park = {
   id: 1089,
   name: "Ballard HS",
+  slug: "ballard-hs",
   courts: [
     {
       id: 1089,
@@ -846,6 +876,7 @@ export const BallardHS: Park = {
 export const SewardPark: Park = {
   id: 373,
   name: "Seward Park",
+  slug: "seward-park",
   courts: [
     {
       id: 373,
@@ -865,6 +896,7 @@ export const SewardPark: Park = {
 export const RiverviewPlayfield: Park = {
   id: 1387,
   name: "Riverview Playfield",
+  slug: "riverview-playfield",
   courts: [
     {
       id: 1387,
@@ -884,6 +916,7 @@ export const RiverviewPlayfield: Park = {
 export const DiscoveryPark: Park = {
   id: 1337,
   name: "Discovery Park",
+  slug: "discovery-park",
   courts: [
     {
       id: 1337,
@@ -903,6 +936,7 @@ export const DiscoveryPark: Park = {
 export const SealthHSComplex: Park = {
   id: 2281,
   name: "Sealth HS Complex",
+  slug: "sealth-hs-complex",
   courts: [
     {
       id: 2281,
@@ -942,6 +976,7 @@ export const SealthHSComplex: Park = {
 export const MeadowbrookPlayfield: Park = {
   id: 1367,
   name: "Meadowbrook Playfield",
+  slug: "meadowbrook-playfield",
   courts: [
     {
       id: 1367,
@@ -981,6 +1016,7 @@ export const MeadowbrookPlayfield: Park = {
 export const WaltHundleyPlayfield: Park = {
   id: 1410,
   name: "Walt Hundley Playfield",
+  slug: "walt-hundley-playfield",
   courts: [
     {
       id: 1410,
@@ -1000,6 +1036,7 @@ export const WaltHundleyPlayfield: Park = {
 export const SoundviewPlayfield: Park = {
   id: 1399,
   name: "Soundview Playfield",
+  slug: "soundview-playfield",
   courts: [
     {
       id: 1399,
@@ -1019,6 +1056,7 @@ export const SoundviewPlayfield: Park = {
 export const MagnoliaPlayfield: Park = {
   id: 1363,
   name: "Magnolia Playfield",
+  slug: "magnolia-playfield",
   courts: [
     {
       id: 1363,
@@ -1048,6 +1086,7 @@ export const MagnoliaPlayfield: Park = {
 export const GilmanPlayfield: Park = {
   id: 1344,
   name: "Gilman Playfield",
+  slug: "gilman-playfield",
   courts: [
     {
       id: 1344,
@@ -1067,6 +1106,7 @@ export const GilmanPlayfield: Park = {
 export const FroulaPlayground: Park = {
   id: 1339,
   name: "Froula Playground",
+  slug: "froula-playground",
   courts: [
     {
       id: 1339,
@@ -1086,6 +1126,7 @@ export const FroulaPlayground: Park = {
 export const BrightonPlayfield: Park = {
   id: 1323,
   name: "Brighton Playfield",
+  slug: "brighton-playfield",
   courts: [
     {
       id: 1323,

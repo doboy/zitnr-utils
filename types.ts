@@ -11,6 +11,7 @@ export type CourtWithParkId = Court & {
 export type Park = {
   id: number;
   name: string;
+  slug: string;
   courts: Court[];
   startTime: string;
   endTime: string;
