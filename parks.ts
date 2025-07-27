@@ -547,6 +547,7 @@ export const MadisonPark: Park = {
 export const ObservatoryPark: Park = {
   id: 1119,
   name: "Observatory Park",
+  slug: "observatory-park",
   courts: [
     {
       id: 1119,
