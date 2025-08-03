@@ -39,29 +39,53 @@ export const combineTimes = (
 
   if (
     park.id == GreenLakeParkEast.id &&
-    month == 7 &&
+    month == 8 &&
     (courtId == park.courts[0].id || courtId == park.courts[2].id)
   ) {
-    if (
-      dayOfWeek == 1 ||
-      dayOfWeek == 2 ||
-      dayOfWeek == 3 ||
-      dayOfWeek == 4 ||
-      dayOfWeek == 5
-    ) {
+    if (dayOfWeek == 1) {
+      result.push({
+        startTime: "18:45:00",
+        endTime: "19:45:00",
+        owner: "GLP",
+      })
+    }
+
+    if (dayOfWeek == 2) {
       result.push({
         startTime: "17:30:00",
-        endTime: "20:15:00",
+        endTime: "19:45:00",
         owner: "GLP",
       });
     }
 
     if (dayOfWeek == 3) {
       result.push({
-        startTime: "15:00:00",
-        endTime: "17:29:00",
+        startTime: "17:00:00",
+        endTime: "19:45:00",
         owner: "GLP",
       });
+    }
+
+    if (dayOfWeek == 4) {
+      result.push({
+        startTime: "11:00:00",
+        endTime: "14:00:00",
+        owner: "GLP",
+      });
+
+      result.push({
+        startTime: "18:45:00",
+        endTime: "19:45:00",
+        owner: "GLP",
+      })
+    }
+
+    if (dayOfWeek == 5) {
+      result.push({
+        startTime: "18:45:00",
+        endTime: "19:45:00",
+        owner: "GLP",
+      })
     }
 
     if (dayOfWeek == 6 || dayOfWeek == 0) {
@@ -69,9 +93,10 @@ export const combineTimes = (
         startTime: "10:00:00",
         endTime: "14:00:00",
         owner: "GLP",
-      });
+      })
     }
   }
+
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
