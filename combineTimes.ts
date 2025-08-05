@@ -9,6 +9,7 @@ export const combineTimes = (
   courtId: number
 ): TimeRangeWithOwner[] => {
   const dayOfWeek = new Date(dateString).getUTCDay();
+  const dayOfMonth = new Date(dateString).getUTCDate();
   const month = new Date(dateString).getUTCMonth() + 1;
 
   const result: TimeRangeWithOwner[] = [
@@ -47,7 +48,7 @@ export const combineTimes = (
         startTime: "18:45:00",
         endTime: "19:45:00",
         owner: "GLP",
-      })
+      });
     }
 
     if (dayOfWeek == 2) {
@@ -77,7 +78,7 @@ export const combineTimes = (
         startTime: "18:45:00",
         endTime: "19:45:00",
         owner: "GLP",
-      })
+      });
     }
 
     if (dayOfWeek == 5) {
@@ -85,18 +86,25 @@ export const combineTimes = (
         startTime: "18:45:00",
         endTime: "19:45:00",
         owner: "GLP",
-      })
+      });
     }
 
     if (dayOfWeek == 6 || dayOfWeek == 0) {
-      result.push({
-        startTime: "10:00:00",
-        endTime: "14:00:00",
-        owner: "GLP",
-      })
+      if (dayOfMonth == 9) {
+        result.push({
+          startTime: "11:00:00",
+          endTime: "14:00:00",
+          owner: "GLP",
+        });
+      } else {
+        result.push({
+          startTime: "10:00:00",
+          endTime: "14:00:00",
+          owner: "GLP",
+        });
+      }
     }
   }
-
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
