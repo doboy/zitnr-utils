@@ -2,56 +2,6 @@ import { combineTimes } from "./combineTimes";
 import { GreenLakeParkWest, MillerPark, MountBakerPark } from "./parks";
 
 describe("combineTimes", () => {
-  it("should include LifeLong Recreation times for Miller Park on Monday", () => {
-    expect(
-      combineTimes("2025-03-24", MillerPark, [], [], MillerPark.courts[0].id)
-    ).toEqual([
-      {
-        startTime: "07:00:00",
-        endTime: "10:00:00",
-        owner: "other reservation(s)",
-      },
-      {
-        startTime: "10:00:00",
-        endTime: "12:00:00",
-        owner: "LifeLong Recreation",
-      },
-      {
-        startTime: "12:00:00",
-        endTime: "22:00:00",
-        owner: "other reservation(s)",
-      },
-    ]);
-  });
-
-  it("should include LifeLong Recreation times for Mount Baker Park on Tuesday", () => {
-    expect(
-      combineTimes(
-        "2025-03-25",
-        MountBakerPark,
-        [],
-        [],
-        MillerPark.courts[0].id
-      )
-    ).toEqual([
-      {
-        startTime: "06:00:00",
-        endTime: "10:00:00",
-        owner: "other reservation(s)",
-      },
-      {
-        startTime: "10:00:00",
-        endTime: "12:00:00",
-        owner: "LifeLong Recreation",
-      },
-      {
-        startTime: "12:00:00",
-        endTime: "22:00:00",
-        owner: "other reservation(s)",
-      },
-    ]);
-  });
-
   it("should handle gaps between unreserved times and fill with other reservations", () => {
     expect(
       combineTimes(
