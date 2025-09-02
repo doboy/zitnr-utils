@@ -1,10 +1,15 @@
-import { Park, TimeRange, TimeRangeWithOwner, TimeRangeWithUsage } from "./types";
+import {
+  Park,
+  TimeRange,
+  TimeRangeWithOwner,
+  TimeRangeWithUsage,
+} from "./types";
 
 export const combineTimes = (
   park: Park,
   unreservedTimes: TimeRange[],
   securedTimes: TimeRangeWithOwner[],
-  reservations: TimeRangeWithUsage[],
+  reservations: TimeRangeWithUsage[]
 ): TimeRangeWithOwner[] => {
   const reservationsMinusSecured = reservations.filter((resevation) => {
     return !securedTimes.some((time) => time.startTime == resevation.startTime);
@@ -12,10 +17,21 @@ export const combineTimes = (
 
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
-      Object.assign({}, time, { owner: "not reserved", use: 'other' as const })
+      Object.assign({}, time, { owner: "not reserved" }) as TimeRangeWithOwner
     ),
-    ...securedTimes.map((time) => Object.assign({ owner: "z.i.t.n.r.", use: 'pickleball' }, time)),
-    ...reservationsMinusSecured.map((time) => Object.assign({ owner: "other reservation" }, time)),
+    ...securedTimes.map((time) =>
+      Object.assign({ owner: "z.i.t.n.r." }, time) as TimeRangeWithOwner
+    ),
+    ...reservationsMinusSecured.map((time) =>
+      Object.assign({
+        owner: time.use === "pickleball" ? "private pickleball reservation" :
+          time.use === "tennis" ? "private tennis reservation" :
+            time.use === "schools" ? "school reservation" :
+              "other reservation",
+        startTime: time.startTime,
+        endTime: time.endTime,
+      }) as TimeRangeWithOwner
+    ),
   ];
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
@@ -28,7 +44,6 @@ export const combineTimes = (
         startTime: prevEndTime,
         endTime: time.startTime,
         owner: "other reservation(s)",
-        use: 'other',
       });
     }
     prevEndTime = time.endTime > prevEndTime ? time.endTime : prevEndTime;
@@ -42,7 +57,6 @@ export const combineTimes = (
       startTime: prevEndTime,
       endTime: park.endTime,
       owner: "other reservation(s)",
-      use: 'other',
     });
   }
 

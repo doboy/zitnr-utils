@@ -26,13 +26,13 @@ export interface TimeRange {
   endTime: string;
 }
 
-export interface TimeRangeWithOwner extends TimeRangeWithUsage {
+export interface TimeRangeWithOwner extends TimeRange {
   owner: string;
 }
 
 export interface TimeRangeWithUsage extends TimeRange {
-  use: 'pickleball' | 'tennis' | 'school' | 'other';
-};
+  use: "pickleball" | "tennis" | "schools" | "other";
+}
 
 export interface SecuredDoc {
   times: Array<TimeRangeWithOwner>;
@@ -48,6 +48,6 @@ export interface UnreservedDoc {
 
 export interface ReservationDoc {
   times: Array<{
-    TimeRangeWithUsage
+    TimeRangeWithUsage;
   }>;
 }

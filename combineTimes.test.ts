@@ -11,51 +11,43 @@ describe("combineTimes", () => {
           { startTime: "10:00:00", endTime: "11:00:00" },
         ],
         [],
-        [],
+        []
       )
     ).toEqual([
       {
         startTime: "07:00:00",
         endTime: "08:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
       {
         startTime: "08:00:00",
         endTime: "09:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "09:00:00",
         endTime: "10:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
       {
         startTime: "10:00:00",
         endTime: "11:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "11:00:00",
         endTime: "22:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
     ]);
   });
 
   it("should handle no unreserved or secured times", () => {
-    expect(
-      combineTimes(MillerPark, [], [], [])
-    ).toEqual([
+    expect(combineTimes(MillerPark, [], [], [])).toEqual([
       {
         startTime: "07:00:00",
         endTime: "22:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
     ]);
   });
@@ -65,15 +57,20 @@ describe("combineTimes", () => {
       combineTimes(
         MillerPark,
         [],
-        [{ startTime: "07:00:00", endTime: "22:00:00", owner: 'z.i.t.n.r.', use: 'pickleball' }],
-        [{ startTime: "07:00:00", endTime: "22:00:00", use: 'pickleball' }],
+        [
+          {
+            startTime: "07:00:00",
+            endTime: "22:00:00",
+            owner: "z.i.t.n.r.",
+          },
+        ],
+        [{ startTime: "07:00:00", endTime: "22:00:00", use: "pickleball" }]
       )
     ).toEqual([
       {
         startTime: "07:00:00",
         endTime: "22:00:00",
         owner: "z.i.t.n.r.",
-        use: 'pickleball',
       },
     ]);
   });
@@ -87,38 +84,33 @@ describe("combineTimes", () => {
           { startTime: "12:00:00", endTime: "13:00:00" },
         ],
         [],
-        [],
+        []
       )
     ).toEqual([
       {
         startTime: "00:00:00",
         endTime: "08:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
       {
         startTime: "08:00:00",
         endTime: "09:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "09:00:00",
         endTime: "12:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
       {
         startTime: "12:00:00",
         endTime: "13:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "13:00:00",
         endTime: "00:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
     ]);
   });
@@ -136,59 +128,51 @@ describe("combineTimes", () => {
           {
             startTime: "00:00:00",
             endTime: "04:00:00",
-            use: 'pickleball',
+            use: "pickleball",
           },
           {
             startTime: "04:00:00",
             endTime: "08:00:00",
-            use: 'pickleball',
+            use: "pickleball",
           },
           {
             startTime: "09:00:00",
             endTime: "12:00:00",
-            use: 'tennis',
+            use: "tennis",
           },
-
-        ],
+        ]
       )
     ).toEqual([
       {
         startTime: "00:00:00",
         endTime: "04:00:00",
-        owner: "other reservation",
-        use: 'pickleball',
+        owner: "private pickleball reservation",
       },
       {
         startTime: "04:00:00",
         endTime: "08:00:00",
-        owner: "other reservation",
-        use: 'pickleball',
+        owner: "private pickleball reservation",
       },
       {
         startTime: "08:00:00",
         endTime: "09:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "09:00:00",
         endTime: "12:00:00",
-        owner: "other reservation",
-        use: 'tennis',
+        owner: "private tennis reservation",
       },
       {
         startTime: "12:00:00",
         endTime: "13:00:00",
         owner: "not reserved",
-        use: 'other',
       },
       {
         startTime: "13:00:00",
         endTime: "00:00:00",
         owner: "other reservation(s)",
-        use: 'other',
       },
     ]);
   });
-
 });
