@@ -6,7 +6,8 @@ import {
 } from "./types";
 
 export const combineTimes = (
-  park: Park,
+  courtStartTime: string,
+  courtEndTime: string,
   unreservedTimes: TimeRange[],
   securedTimes: TimeRangeWithOwner[],
   reservations: TimeRangeWithUsage[]
@@ -43,7 +44,7 @@ export const combineTimes = (
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
-  let prevEndTime = park.startTime;
+  let prevEndTime = courtStartTime;
 
   result.forEach((time) => {
     if (time.startTime > prevEndTime) {
@@ -57,12 +58,12 @@ export const combineTimes = (
   });
 
   if (
-    prevEndTime < park.endTime ||
-    (park.endTime == "00:00:00" && prevEndTime < "24:00:00")
+    prevEndTime < courtEndTime ||
+    (courtEndTime == "00:00:00" && prevEndTime < "24:00:00")
   ) {
     result.push({
       startTime: prevEndTime,
-      endTime: park.endTime,
+      endTime: courtEndTime,
       owner: "other reservation(s)",
     });
   }

@@ -5,7 +5,8 @@ describe("combineTimes", () => {
   it("should handle gaps between unreserved times and fill with other reservations", () => {
     expect(
       combineTimes(
-        MillerPark,
+        MillerPark.startTime,
+        MillerPark.endTime,
         [
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "10:00:00", endTime: "11:00:00" },
@@ -43,7 +44,7 @@ describe("combineTimes", () => {
   });
 
   it("should handle no unreserved or secured times", () => {
-    expect(combineTimes(MillerPark, [], [], [])).toEqual([
+    expect(combineTimes(MillerPark.startTime, MillerPark.endTime, [], [], [])).toEqual([
       {
         startTime: "07:00:00",
         endTime: "22:00:00",
@@ -55,7 +56,8 @@ describe("combineTimes", () => {
   it("should handle secured times spanning the entire park hours", () => {
     expect(
       combineTimes(
-        MillerPark,
+        MillerPark.startTime,
+        MillerPark.endTime,
         [],
         [
           {
@@ -78,7 +80,8 @@ describe("combineTimes", () => {
   it("should handle unreserved times for GreenLakeParkWest", () => {
     expect(
       combineTimes(
-        GreenLakeParkWest,
+        GreenLakeParkWest.startTime,
+        GreenLakeParkWest.endTime,
         [
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "12:00:00", endTime: "13:00:00" },
@@ -118,7 +121,8 @@ describe("combineTimes", () => {
   it("should handle reserved times for GreenLakeParkWest", () => {
     expect(
       combineTimes(
-        GreenLakeParkWest,
+        GreenLakeParkWest.startTime,
+        GreenLakeParkWest.endTime,
         [
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "12:00:00", endTime: "13:00:00" },
