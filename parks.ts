@@ -39,7 +39,7 @@ export const MountBakerPark: Park = {
       canReserve: true,
     },
   ],
-  startTime: "06:00:00",
+  startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
     latitude: 47.5795238,
