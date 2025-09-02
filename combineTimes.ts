@@ -1,17 +1,10 @@
 import { Park, TimeRange, TimeRangeWithOwner } from "./types";
-import { GreenLakeParkEast, MillerPark, MountBakerPark } from "./parks";
 
 export const combineTimes = (
-  dateString: string,
   park: Park,
   unreservedTimes: TimeRange[],
   securedTimes: TimeRange[],
-  courtId: number
 ): TimeRangeWithOwner[] => {
-  const dayOfWeek = new Date(dateString).getUTCDay();
-  const dayOfMonth = new Date(dateString).getUTCDate();
-  const month = new Date(dateString).getUTCMonth() + 1;
-
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
       Object.assign({}, time, { owner: "not reserved" })

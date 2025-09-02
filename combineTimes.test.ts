@@ -5,14 +5,12 @@ describe("combineTimes", () => {
   it("should handle gaps between unreserved times and fill with other reservations", () => {
     expect(
       combineTimes(
-        "2025-03-25",
         MillerPark,
         [
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "10:00:00", endTime: "11:00:00" },
         ],
         [],
-        MillerPark.courts[0].id
       )
     ).toEqual([
       {
@@ -45,7 +43,7 @@ describe("combineTimes", () => {
 
   it("should handle no unreserved or secured times", () => {
     expect(
-      combineTimes("2025-03-25", MillerPark, [], [], MillerPark.courts[0].id)
+      combineTimes(MillerPark, [], [])
     ).toEqual([
       {
         startTime: "07:00:00",
@@ -58,11 +56,9 @@ describe("combineTimes", () => {
   it("should handle secured times spanning the entire park hours", () => {
     expect(
       combineTimes(
-        "2025-03-25",
         MillerPark,
         [],
         [{ startTime: "07:00:00", endTime: "22:00:00" }],
-        MillerPark.courts[0].id
       )
     ).toEqual([
       {
@@ -76,14 +72,12 @@ describe("combineTimes", () => {
   it("should handle unreserved times for GreenLakeParkWest", () => {
     expect(
       combineTimes(
-        "2025-03-26",
         GreenLakeParkWest,
         [
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "12:00:00", endTime: "13:00:00" },
         ],
         [],
-        GreenLakeParkWest.courts[0].id
       )
     ).toEqual([
       {
