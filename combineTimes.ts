@@ -3,38 +3,40 @@ import { Park, TimeRange, TimeRangeWithOwner } from "./types";
 export const combineTimes = (
   park: Park,
   unreservedTimes: TimeRange[],
-  securedTimes: TimeRange[],
+  securedTimes: TimeRangeWithOwner[],
 ): TimeRangeWithOwner[] => {
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
-      Object.assign({}, time, { owner: "not reserved" })
+      Object.assign({}, time, { owner: "not reserved", use: 'other' as const })
     ),
-    ...securedTimes.map((time) => Object.assign({ owner: "z.i.t.n.r." }, time)),
+    ...securedTimes.map((time) => Object.assign({ owner: "z.i.t.n.r.", use: 'pickleball' }, time)),
   ];
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
 
-  let lastEndTime = park.startTime;
+  let prevEndTime = park.startTime;
 
   result.forEach((time) => {
-    if (time.startTime > lastEndTime) {
+    if (time.startTime > prevEndTime) {
       result.push({
-        startTime: lastEndTime,
+        startTime: prevEndTime,
         endTime: time.startTime,
         owner: "other reservation(s)",
+        use: 'other',
       });
     }
-    lastEndTime = time.endTime > lastEndTime ? time.endTime : lastEndTime;
+    prevEndTime = time.endTime > prevEndTime ? time.endTime : prevEndTime;
   });
 
   if (
-    lastEndTime < park.endTime ||
-    (park.endTime == "00:00:00" && lastEndTime < "24:00:00")
+    prevEndTime < park.endTime ||
+    (park.endTime == "00:00:00" && prevEndTime < "24:00:00")
   ) {
     result.push({
-      startTime: lastEndTime,
+      startTime: prevEndTime,
       endTime: park.endTime,
       owner: "other reservation(s)",
+      use: 'other',
     });
   }
 
