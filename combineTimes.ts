@@ -16,21 +16,28 @@ export const combineTimes = (
   });
 
   const result: TimeRangeWithOwner[] = [
-    ...unreservedTimes.map((time) =>
-      Object.assign({}, time, { owner: "not reserved" }) as TimeRangeWithOwner
+    ...unreservedTimes.map(
+      (time) =>
+        Object.assign({}, time, { owner: "not reserved" }) as TimeRangeWithOwner
     ),
-    ...securedTimes.map((time) =>
-      Object.assign({ owner: "z.i.t.n.r." }, time) as TimeRangeWithOwner
+    ...securedTimes.map(
+      (time) =>
+        Object.assign({ owner: "z.i.t.n.r." }, time) as TimeRangeWithOwner
     ),
-    ...reservationsMinusSecured.map((time) =>
-      Object.assign({
-        owner: time.use === "pickleball" ? "private pickleball reservation" :
-          time.use === "tennis" ? "private tennis reservation" :
-            time.use === "schools" ? "school reservation" :
-              "other reservation",
-        startTime: time.startTime,
-        endTime: time.endTime,
-      }) as TimeRangeWithOwner
+    ...reservationsMinusSecured.map(
+      (time) =>
+        Object.assign({
+          owner:
+            time.use === "pickleball"
+              ? "private pickleball reservation"
+              : time.use === "tennis"
+              ? "private tennis reservation"
+              : time.use === "schools"
+              ? "school reservation"
+              : "other reservation",
+          startTime: time.startTime,
+          endTime: time.endTime,
+        }) as TimeRangeWithOwner
     ),
   ];
 

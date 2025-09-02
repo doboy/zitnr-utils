@@ -47,7 +47,5 @@ export interface UnreservedDoc {
 }
 
 export interface ReservationDoc {
-  times: Array<{
-    TimeRangeWithUsage;
-  }>;
+  times: Array<TimeRangeWithUsage>;
 }
