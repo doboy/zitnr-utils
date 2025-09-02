@@ -31,7 +31,7 @@ export interface TimeRangeWithOwner extends TimeRangeWithUsage {
 }
 
 export interface TimeRangeWithUsage extends TimeRange {
-  use: 'pickleball' | 'tennis' | 'other';
+  use: 'pickleball' | 'tennis' | 'school' | 'other';
 };
 
 export interface SecuredDoc {

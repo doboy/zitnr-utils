@@ -66,7 +66,7 @@ describe("combineTimes", () => {
         MillerPark,
         [],
         [{ startTime: "07:00:00", endTime: "22:00:00", owner: 'z.i.t.n.r.', use: 'pickleball' }],
-        [],
+        [{ startTime: "07:00:00", endTime: "22:00:00", use: 'pickleball' }],
       )
     ).toEqual([
       {
@@ -122,4 +122,73 @@ describe("combineTimes", () => {
       },
     ]);
   });
+
+  it("should handle reserved times for GreenLakeParkWest", () => {
+    expect(
+      combineTimes(
+        GreenLakeParkWest,
+        [
+          { startTime: "08:00:00", endTime: "09:00:00" },
+          { startTime: "12:00:00", endTime: "13:00:00" },
+        ],
+        [],
+        [
+          {
+            startTime: "00:00:00",
+            endTime: "04:00:00",
+            use: 'pickleball',
+          },
+          {
+            startTime: "04:00:00",
+            endTime: "08:00:00",
+            use: 'pickleball',
+          },
+          {
+            startTime: "09:00:00",
+            endTime: "12:00:00",
+            use: 'tennis',
+          },
+
+        ],
+      )
+    ).toEqual([
+      {
+        startTime: "00:00:00",
+        endTime: "04:00:00",
+        owner: "other reservation",
+        use: 'pickleball',
+      },
+      {
+        startTime: "04:00:00",
+        endTime: "08:00:00",
+        owner: "other reservation",
+        use: 'pickleball',
+      },
+      {
+        startTime: "08:00:00",
+        endTime: "09:00:00",
+        owner: "not reserved",
+        use: 'other',
+      },
+      {
+        startTime: "09:00:00",
+        endTime: "12:00:00",
+        owner: "other reservation",
+        use: 'tennis',
+      },
+      {
+        startTime: "12:00:00",
+        endTime: "13:00:00",
+        owner: "not reserved",
+        use: 'other',
+      },
+      {
+        startTime: "13:00:00",
+        endTime: "00:00:00",
+        owner: "other reservation(s)",
+        use: 'other',
+      },
+    ]);
+  });
+
 });

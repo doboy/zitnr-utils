@@ -6,11 +6,16 @@ export const combineTimes = (
   securedTimes: TimeRangeWithOwner[],
   reservations: TimeRangeWithUsage[],
 ): TimeRangeWithOwner[] => {
+  const reservationsMinusSecured = reservations.filter((resevation) => {
+    return !securedTimes.some((time) => time.startTime == resevation.startTime);
+  });
+
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
       Object.assign({}, time, { owner: "not reserved", use: 'other' as const })
     ),
     ...securedTimes.map((time) => Object.assign({ owner: "z.i.t.n.r.", use: 'pickleball' }, time)),
+    ...reservationsMinusSecured.map((time) => Object.assign({ owner: "other reservation" }, time)),
   ];
 
   result.sort((a, b) => a.startTime.localeCompare(b.startTime));
