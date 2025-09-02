@@ -146,12 +146,12 @@ describe("combineTimes", () => {
       {
         startTime: "00:00:00",
         endTime: "04:00:00",
-        owner: "private pickleball reservation",
+        owner: "pickleball reservation",
       },
       {
         startTime: "04:00:00",
         endTime: "08:00:00",
-        owner: "private pickleball reservation",
+        owner: "pickleball reservation",
       },
       {
         startTime: "08:00:00",
@@ -161,7 +161,7 @@ describe("combineTimes", () => {
       {
         startTime: "09:00:00",
         endTime: "12:00:00",
-        owner: "private tennis reservation",
+        owner: "tennis reservation",
       },
       {
         startTime: "12:00:00",

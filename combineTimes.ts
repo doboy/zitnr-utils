@@ -29,9 +29,9 @@ export const combineTimes = (
         Object.assign({
           owner:
             time.use === "pickleball"
-              ? "private pickleball reservation"
+              ? "pickleball reservation"
               : time.use === "tennis"
-              ? "private tennis reservation"
+              ? "tennis reservation"
               : time.use === "schools"
               ? "school reservation"
               : "other reservation",
