@@ -11,6 +11,7 @@ describe("combineTimes", () => {
           { startTime: "10:00:00", endTime: "11:00:00" },
         ],
         [],
+        [],
       )
     ).toEqual([
       {
@@ -48,7 +49,7 @@ describe("combineTimes", () => {
 
   it("should handle no unreserved or secured times", () => {
     expect(
-      combineTimes(MillerPark, [], [])
+      combineTimes(MillerPark, [], [], [])
     ).toEqual([
       {
         startTime: "07:00:00",
@@ -65,6 +66,7 @@ describe("combineTimes", () => {
         MillerPark,
         [],
         [{ startTime: "07:00:00", endTime: "22:00:00", owner: 'z.i.t.n.r.', use: 'pickleball' }],
+        [],
       )
     ).toEqual([
       {
@@ -84,6 +86,7 @@ describe("combineTimes", () => {
           { startTime: "08:00:00", endTime: "09:00:00" },
           { startTime: "12:00:00", endTime: "13:00:00" },
         ],
+        [],
         [],
       )
     ).toEqual([

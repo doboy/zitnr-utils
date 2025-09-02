@@ -1,9 +1,10 @@
-import { Park, TimeRange, TimeRangeWithOwner } from "./types";
+import { Park, TimeRange, TimeRangeWithOwner, TimeRangeWithUsage } from "./types";
 
 export const combineTimes = (
   park: Park,
   unreservedTimes: TimeRange[],
   securedTimes: TimeRangeWithOwner[],
+  reservations: TimeRangeWithUsage[],
 ): TimeRangeWithOwner[] => {
   const result: TimeRangeWithOwner[] = [
     ...unreservedTimes.map((time) =>
