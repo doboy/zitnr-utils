@@ -2,6 +2,9 @@ export type Court = {
   id: number;
   canReserve: boolean;
   courtNo: string;
+  // These are start times and end times for courts that have different hours than the park they belong to
+  startTime?: string;
+  endTime?: string;
 };
 
 export type CourtWithParkId = Court & {

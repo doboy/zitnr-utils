@@ -61,6 +61,8 @@ export const BeaconHillPlayfield: Park = {
       id: 1320,
       courtNo: "2",
       canReserve: false,
+      startTime: "08:30:00",
+      endTime: "21:00:00",
     },
   ],
   startTime: "07:00:00",
