@@ -184,7 +184,7 @@ export const GreenLakeParkWest: Park = {
     },
   ],
   startTime: "00:00:00",
-  endTime: "00:00:00",
+  endTime: "23:59:00",
   location: {
     latitude: 47.6813315,
     longitude: -122.3617288,
