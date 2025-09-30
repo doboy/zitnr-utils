@@ -18,6 +18,8 @@ export type Park = {
   courts: Court[];
   startTime: string;
   endTime: string;
+  weekendStartTime?: string;
+  weekendEndTime?: string;
   location?: {
     latitude: number;
     longitude: number;

@@ -44,7 +44,9 @@ describe("combineTimes", () => {
   });
 
   it("should handle no unreserved or secured times", () => {
-    expect(combineTimes(MillerPark.startTime, MillerPark.endTime, [], [], [])).toEqual([
+    expect(
+      combineTimes(MillerPark.startTime, MillerPark.endTime, [], [], [])
+    ).toEqual([
       {
         startTime: "07:00:00",
         endTime: "22:00:00",

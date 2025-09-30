@@ -41,6 +41,8 @@ export const MountBakerPark: Park = {
   ],
   startTime: "07:00:00",
   endTime: "22:00:00",
+  weekendStartTime: "09:00:00",
+  weekendEndTime: "22:00:00",
   location: {
     latitude: 47.5795238,
     longitude: -122.2910945,
