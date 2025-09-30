@@ -114,7 +114,7 @@ describe("combineTimes", () => {
       },
       {
         startTime: "13:00:00",
-        endTime: "00:00:00",
+        endTime: "23:59:00",
         owner: "other reservation(s)",
       },
     ]);
@@ -176,7 +176,7 @@ describe("combineTimes", () => {
       },
       {
         startTime: "13:00:00",
-        endTime: "00:00:00",
+        endTime: "23:59:00",
         owner: "other reservation(s)",
       },
     ]);
