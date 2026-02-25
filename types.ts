@@ -15,6 +15,8 @@ export type Park = {
   id: number;
   name: string;
   slug: string;
+  address: string;
+  comments: string;
   courts: Court[];
   startTime: string;
   endTime: string;
