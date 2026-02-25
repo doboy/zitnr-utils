@@ -381,8 +381,8 @@ export const GarfieldPlayfield: Park = {
   startTime: "06:00:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6070100,
-    longitude: -122.3011000,
+    latitude: 47.60701,
+    longitude: -122.3011,
   },
 };
 
@@ -415,8 +415,8 @@ export const VolunteerPark: Park = {
   startTime: "06:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.6301270,
-    longitude: -122.3146360,
+    latitude: 47.630127,
+    longitude: -122.314636,
   },
 };
 
@@ -439,8 +439,8 @@ export const MadronaPlayground: Park = {
   startTime: "06:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.6063000,
-    longitude: -122.2886000,
+    latitude: 47.6063,
+    longitude: -122.2886,
   },
 };
 
@@ -463,8 +463,8 @@ export const SamSmithPark: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.5902000,
-    longitude: -122.2955000,
+    latitude: 47.5902,
+    longitude: -122.2955,
   },
 };
 
@@ -487,8 +487,8 @@ export const MontlakePlayfield: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.6420000,
-    longitude: -122.3097000,
+    latitude: 47.642,
+    longitude: -122.3097,
   },
 };
 
@@ -511,8 +511,8 @@ export const RogersPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6426000,
-    longitude: -122.3252000,
+    latitude: 47.6426,
+    longitude: -122.3252,
   },
 };
 
@@ -555,8 +555,8 @@ export const AYTCOutdoor: Park = {
   startTime: "07:00:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.5720000,
-    longitude: -122.2930000,
+    latitude: 47.572,
+    longitude: -122.293,
   },
 };
 
@@ -579,8 +579,8 @@ export const MadisonPark: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.6349110,
-    longitude: -122.2781240,
+    latitude: 47.634911,
+    longitude: -122.278124,
   },
 };
 
@@ -603,8 +603,8 @@ export const ObservatoryPark: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6313420,
-    longitude: -122.3551340,
+    latitude: 47.631342,
+    longitude: -122.355134,
   },
 };
 
@@ -632,8 +632,8 @@ export const DavidRodgersPark: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.6456000,
-    longitude: -122.3596000,
+    latitude: 47.6456,
+    longitude: -122.3596,
   },
 };
 
@@ -666,8 +666,8 @@ export const JeffersonParkLid: Park = {
   startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.5688000,
-    longitude: -122.3103000,
+    latitude: 47.5688,
+    longitude: -122.3103,
   },
 };
 
@@ -690,8 +690,8 @@ export const WallingfordPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6587000,
-    longitude: -122.3362000,
+    latitude: 47.6587,
+    longitude: -122.3362,
   },
 };
 
@@ -724,8 +724,8 @@ export const LaurelhurstPlayfield: Park = {
   startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.6602000,
-    longitude: -122.2779000,
+    latitude: 47.6602,
+    longitude: -122.2779,
   },
 };
 
@@ -758,8 +758,8 @@ export const RainierPlayfield: Park = {
   startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.5609000,
-    longitude: -122.2867000,
+    latitude: 47.5609,
+    longitude: -122.2867,
   },
 };
 
@@ -802,8 +802,8 @@ export const SolsticePark: Park = {
   startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.5365000,
-    longitude: -122.3900000,
+    latitude: 47.5365,
+    longitude: -122.39,
   },
 };
 
@@ -831,8 +831,8 @@ export const HiawathaPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.5782000,
-    longitude: -122.3845000,
+    latitude: 47.5782,
+    longitude: -122.3845,
   },
 };
 
@@ -855,8 +855,8 @@ export const DelridgePlayfield: Park = {
   startTime: "08:00:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.5633000,
-    longitude: -122.3650000,
+    latitude: 47.5633,
+    longitude: -122.365,
   },
 };
 
@@ -879,8 +879,8 @@ export const DearbornPark: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.5535000,
-    longitude: -122.2985000,
+    latitude: 47.5535,
+    longitude: -122.2985,
   },
 };
 
@@ -903,8 +903,8 @@ export const BryantPlayground: Park = {
   startTime: "07:00:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.6752430,
-    longitude: -122.2838290,
+    latitude: 47.675243,
+    longitude: -122.283829,
   },
 };
 
@@ -927,8 +927,8 @@ export const AlkiPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.5793000,
-    longitude: -122.4077000,
+    latitude: 47.5793,
+    longitude: -122.4077,
   },
 };
 
@@ -961,8 +961,8 @@ export const BallardHS: Park = {
   startTime: "08:30:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.6770000,
-    longitude: -122.3746000,
+    latitude: 47.677,
+    longitude: -122.3746,
   },
 };
 
@@ -985,8 +985,8 @@ export const SewardPark: Park = {
   startTime: "06:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.5503000,
-    longitude: -122.2648000,
+    latitude: 47.5503,
+    longitude: -122.2648,
   },
 };
 
@@ -1009,8 +1009,8 @@ export const RiverviewPlayfield: Park = {
   startTime: "06:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.5389000,
-    longitude: -122.3493000,
+    latitude: 47.5389,
+    longitude: -122.3493,
   },
 };
 
@@ -1033,8 +1033,8 @@ export const DiscoveryPark: Park = {
   startTime: "04:00:00",
   endTime: "23:30:00",
   location: {
-    latitude: 47.6556000,
-    longitude: -122.4103000,
+    latitude: 47.6556,
+    longitude: -122.4103,
   },
 };
 
@@ -1077,8 +1077,8 @@ export const SealthHSComplex: Park = {
   startTime: "08:30:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.5265000,
-    longitude: -122.3710000,
+    latitude: 47.5265,
+    longitude: -122.371,
   },
 };
 
@@ -1121,8 +1121,8 @@ export const MeadowbrookPlayfield: Park = {
   startTime: "07:00:00",
   endTime: "22:00:00",
   location: {
-    latitude: 47.7060000,
-    longitude: -122.2935000,
+    latitude: 47.706,
+    longitude: -122.2935,
   },
 };
 
@@ -1145,8 +1145,8 @@ export const WaltHundleyPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.5402000,
-    longitude: -122.3748000,
+    latitude: 47.5402,
+    longitude: -122.3748,
   },
 };
 
@@ -1169,8 +1169,8 @@ export const SoundviewPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6954000,
-    longitude: -122.3789000,
+    latitude: 47.6954,
+    longitude: -122.3789,
   },
 };
 
@@ -1203,8 +1203,8 @@ export const MagnoliaPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6408000,
-    longitude: -122.4003000,
+    latitude: 47.6408,
+    longitude: -122.4003,
   },
 };
 
@@ -1227,8 +1227,8 @@ export const GilmanPlayfield: Park = {
   startTime: "08:30:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.6679000,
-    longitude: -122.3689000,
+    latitude: 47.6679,
+    longitude: -122.3689,
   },
 };
 
@@ -1251,8 +1251,8 @@ export const FroulaPlayground: Park = {
   startTime: "07:00:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.6805000,
-    longitude: -122.3140000,
+    latitude: 47.6805,
+    longitude: -122.314,
   },
 };
 
@@ -1275,8 +1275,8 @@ export const BrightonPlayfield: Park = {
   startTime: "06:00:00",
   endTime: "23:00:00",
   location: {
-    latitude: 47.5484000,
-    longitude: -122.2821000,
+    latitude: 47.5484,
+    longitude: -122.2821,
   },
 };
 
