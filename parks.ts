@@ -4,6 +4,8 @@ export const MillerPark: Park = {
   id: 1373,
   name: "Miller Playfield",
   slug: "miller-playfield",
+  address: "330 19th Ave E, Seattle, WA 98112",
+  comments: "",
   courts: [
     {
       id: 1373,
@@ -27,6 +29,8 @@ export const MountBakerPark: Park = {
   id: 1377,
   name: "Mount Baker Park",
   slug: "mount-baker-park",
+  address: "2521 Lake Park Dr S, Seattle, WA 98144",
+  comments: "",
   courts: [
     {
       id: 1377,
@@ -53,6 +57,8 @@ export const BeaconHillPlayfield: Park = {
   id: 1319,
   name: "Beacon Hill Playfield",
   slug: "beacon-hill-playfield",
+  address: "1902 13th Ave S, Seattle, WA 98144",
+  comments: "",
   courts: [
     {
       id: 1319,
@@ -79,6 +85,8 @@ export const BitterLakePlayfield: Park = {
   id: 1315,
   name: "Bitter Lake Playfield",
   slug: "bitter-lake-playfield",
+  address: "13035 Linden Ave N, Seattle, WA 98133",
+  comments: "",
   courts: [
     {
       id: 1315,
@@ -113,6 +121,8 @@ export const RainierBeachPlayfield: Park = {
   id: 1379,
   name: "Rainier Beach Playfield",
   slug: "rainier-beach-playfield",
+  address: "8802 Rainier Ave S, Seattle, WA 98118",
+  comments: "",
   courts: [
     {
       id: 1379,
@@ -147,6 +157,8 @@ export const MagnoliaPark: Park = {
   id: 1361,
   name: "Magnolia Park",
   slug: "magnolia-park",
+  address: "1461 Magnolia Blvd W, Seattle, WA 98199",
+  comments: "",
   courts: [
     {
       id: 1361,
@@ -171,6 +183,8 @@ export const GreenLakeParkWest: Park = {
   id: 181,
   name: "Green Lake Park West",
   slug: "green-lake-park-west",
+  address: "7201 W Green Lake Dr N, Seattle, WA 98103",
+  comments: "",
   courts: [
     {
       id: 181,
@@ -195,6 +209,8 @@ export const GreenLakeParkEast: Park = {
   id: 2906,
   name: "Green Lake Park East",
   slug: "green-lake-park-east",
+  address: "7201 E Green Lake Dr N, Seattle, WA 98115",
+  comments: "",
   courts: [
     {
       id: 2906,
@@ -224,6 +240,8 @@ export const LowerWoodlandPlayfield: Park = {
   id: 353,
   name: "Lower Woodland Playfield",
   slug: "lower-woodland-playfield",
+  address: "1000 N 50th St, Seattle, WA 98103",
+  comments: "",
   courts: [
     {
       id: 353,
@@ -288,6 +306,8 @@ export const LowerWoodlandPlayfieldTennis: Park = {
   id: 369,
   name: "Lower Woodland Playfield Tennis",
   slug: "lower-woodland-playfield-tennis",
+  address: "1000 N 50th St, Seattle, WA 98103",
+  comments: "",
   courts: [
     {
       id: 369,
@@ -322,6 +342,8 @@ export const IngrahamHS: Park = {
   id: 1095,
   name: "Ingraham HS",
   slug: "ingraham-hs",
+  address: "1819 N 135th St, Seattle, WA 98133",
+  comments: "",
   courts: [
     {
       id: 1095,
@@ -366,6 +388,8 @@ export const GarfieldPlayfield: Park = {
   id: 1341,
   name: "Garfield Playfield",
   slug: "garfield-playfield",
+  address: "532 23rd Ave, Seattle, WA 98122",
+  comments: "",
   courts: [
     {
       id: 1341,
@@ -390,6 +414,8 @@ export const VolunteerPark: Park = {
   id: 363,
   name: "Volunteer Park",
   slug: "volunteer-park",
+  address: "1247 15th Ave E, Seattle, WA 98112",
+  comments: "",
   courts: [
     {
       id: 363,
@@ -424,6 +450,8 @@ export const MadronaPlayground: Park = {
   id: 2279,
   name: "Madrona Playground",
   slug: "madrona-playground",
+  address: "3211 E Spring St, Seattle, WA 98122",
+  comments: "",
   courts: [
     {
       id: 2279,
@@ -448,6 +476,8 @@ export const SamSmithPark: Park = {
   id: 1391,
   name: "Sam Smith (I90 Lid) Park",
   slug: "sam-smith-park",
+  address: "1400 Martin Luther King Jr Way S, Seattle, WA 98144",
+  comments: "",
   courts: [
     {
       id: 1391,
@@ -472,6 +502,8 @@ export const MontlakePlayfield: Park = {
   id: 1375,
   name: "Montlake Playfield",
   slug: "montlake-playfield",
+  address: "1618 E Calhoun St, Seattle, WA 98112",
+  comments: "",
   courts: [
     {
       id: 1375,
@@ -496,6 +528,8 @@ export const RogersPlayfield: Park = {
   id: 1389,
   name: "Rogers Playfield",
   slug: "rogers-playfield",
+  address: "2516 Eastlake Ave E, Seattle, WA 98102",
+  comments: "",
   courts: [
     {
       id: 1389,
@@ -520,6 +554,8 @@ export const AYTCOutdoor: Park = {
   id: 279,
   name: "AYTC Outdoor",
   slug: "aytc-outdoor",
+  address: "2000 Martin Luther King Jr Way S, Seattle, WA 98144",
+  comments: "",
   courts: [
     {
       id: 279,
@@ -564,6 +600,8 @@ export const MadisonPark: Park = {
   id: 1359,
   name: "Madison Park",
   slug: "madison-park",
+  address: "1820 42nd Ave E, Seattle, WA 98112",
+  comments: "",
   courts: [
     {
       id: 1359,
@@ -588,6 +626,8 @@ export const ObservatoryPark: Park = {
   id: 1119,
   name: "Observatory Park",
   slug: "observatory-park",
+  address: "1405 Warren Ave N, Seattle, WA 98109",
+  comments: "",
   courts: [
     {
       id: 1119,
@@ -612,6 +652,8 @@ export const DavidRodgersPark: Park = {
   id: 1330,
   name: "David Rodgers Park",
   slug: "david-rodgers-park",
+  address: "2800 1st Ave W, Seattle, WA 98119",
+  comments: "",
   courts: [
     {
       id: 1330,
@@ -641,6 +683,8 @@ export const JeffersonParkLid: Park = {
   id: 777,
   name: "Jefferson Park Lid",
   slug: "jefferson-park-lid",
+  address: "3801 Beacon Ave S, Seattle, WA 98108",
+  comments: "",
   courts: [
     {
       id: 777,
@@ -675,6 +719,8 @@ export const WallingfordPlayfield: Park = {
   id: 1408,
   name: "Wallingford Playfield",
   slug: "wallingford-playfield",
+  address: "4219 Wallingford Ave N, Seattle, WA 98103",
+  comments: "",
   courts: [
     {
       id: 1408,
@@ -699,6 +745,8 @@ export const LaurelhurstPlayfield: Park = {
   id: 1353,
   name: "Laurelhurst Playfield",
   slug: "laurelhurst-playfield",
+  address: "4544 NE 41st St, Seattle, WA 98105",
+  comments: "",
   courts: [
     {
       id: 1353,
@@ -733,6 +781,8 @@ export const RainierPlayfield: Park = {
   id: 1383,
   name: "Rainier Playfield",
   slug: "rainier-playfield",
+  address: "3700 S Alaska St, Seattle, WA 98118",
+  comments: "",
   courts: [
     {
       id: 1383,
@@ -767,6 +817,8 @@ export const SolsticePark: Park = {
   id: 1393,
   name: "Solstice Park",
   slug: "solstice-park",
+  address: "7400 Fauntleroy Way SW, Seattle, WA 98136",
+  comments: "",
   courts: [
     {
       id: 1393,
@@ -811,6 +863,8 @@ export const HiawathaPlayfield: Park = {
   id: 1346,
   name: "Hiawatha Playfield",
   slug: "hiawatha-playfield",
+  address: "2700 California Ave SW, Seattle, WA 98116",
+  comments: "",
   courts: [
     {
       id: 1346,
@@ -840,6 +894,8 @@ export const DelridgePlayfield: Park = {
   id: 1335,
   name: "Delridge Playfield",
   slug: "delridge-playfield",
+  address: "4458 Delridge Way SW, Seattle, WA 98106",
+  comments: "",
   courts: [
     {
       id: 1335,
@@ -864,6 +920,8 @@ export const DearbornPark: Park = {
   id: 1333,
   name: "Dearborn Park",
   slug: "dearborn-park",
+  address: "2919 S Brandon St, Seattle, WA 98108",
+  comments: "",
   courts: [
     {
       id: 1333,
@@ -888,6 +946,8 @@ export const BryantPlayground: Park = {
   id: 1325,
   name: "Bryant Playground",
   slug: "bryant-playground",
+  address: "4103 NE 65th St, Seattle, WA 98115",
+  comments: "",
   courts: [
     {
       id: 1325,
@@ -912,6 +972,8 @@ export const AlkiPlayfield: Park = {
   id: 1146,
   name: "Alki Playfield",
   slug: "alki-playfield",
+  address: "5817 SW Lander St, Seattle, WA 98116",
+  comments: "",
   courts: [
     {
       id: 1146,
@@ -936,6 +998,8 @@ export const BallardHS: Park = {
   id: 1089,
   name: "Ballard HS",
   slug: "ballard-hs",
+  address: "1418 NW 65th St, Seattle, WA 98117",
+  comments: "",
   courts: [
     {
       id: 1089,
@@ -970,6 +1034,8 @@ export const SewardPark: Park = {
   id: 373,
   name: "Seward Park",
   slug: "seward-park",
+  address: "5900 Lake Washington Blvd S, Seattle, WA 98118",
+  comments: "",
   courts: [
     {
       id: 373,
@@ -994,6 +1060,8 @@ export const RiverviewPlayfield: Park = {
   id: 1387,
   name: "Riverview Playfield",
   slug: "riverview-playfield",
+  address: "7226 12th Ave SW, Seattle, WA 98106",
+  comments: "",
   courts: [
     {
       id: 1387,
@@ -1018,6 +1086,8 @@ export const DiscoveryPark: Park = {
   id: 1337,
   name: "Discovery Park",
   slug: "discovery-park",
+  address: "3801 Discovery Park Blvd, Seattle, WA 98199",
+  comments: "",
   courts: [
     {
       id: 1337,
@@ -1042,6 +1112,8 @@ export const SealthHSComplex: Park = {
   id: 2281,
   name: "Sealth HS Complex",
   slug: "sealth-hs-complex",
+  address: "2600 SW Thistle St, Seattle, WA 98126",
+  comments: "",
   courts: [
     {
       id: 2281,
@@ -1086,6 +1158,8 @@ export const MeadowbrookPlayfield: Park = {
   id: 1367,
   name: "Meadowbrook Playfield",
   slug: "meadowbrook-playfield",
+  address: "10533 35th Ave NE, Seattle, WA 98125",
+  comments: "",
   courts: [
     {
       id: 1367,
@@ -1130,6 +1204,8 @@ export const WaltHundleyPlayfield: Park = {
   id: 1410,
   name: "Walt Hundley Playfield",
   slug: "walt-hundley-playfield",
+  address: "6920 34th Ave SW, Seattle, WA 98126",
+  comments: "",
   courts: [
     {
       id: 1410,
@@ -1154,6 +1230,8 @@ export const SoundviewPlayfield: Park = {
   id: 1399,
   name: "Soundview Playfield",
   slug: "soundview-playfield",
+  address: "1590 NW 90th St, Seattle, WA 98117",
+  comments: "",
   courts: [
     {
       id: 1399,
@@ -1178,6 +1256,8 @@ export const MagnoliaPlayfield: Park = {
   id: 1363,
   name: "Magnolia Playfield",
   slug: "magnolia-playfield",
+  address: "2518 34th Ave W, Seattle, WA 98199",
+  comments: "",
   courts: [
     {
       id: 1363,
@@ -1212,6 +1292,8 @@ export const GilmanPlayfield: Park = {
   id: 1344,
   name: "Gilman Playfield",
   slug: "gilman-playfield",
+  address: "923 NW 54th St, Seattle, WA 98107",
+  comments: "",
   courts: [
     {
       id: 1344,
@@ -1236,6 +1318,8 @@ export const FroulaPlayground: Park = {
   id: 1339,
   name: "Froula Playground",
   slug: "froula-playground",
+  address: "7200 12th Ave NE, Seattle, WA 98115",
+  comments: "",
   courts: [
     {
       id: 1339,
@@ -1260,6 +1344,8 @@ export const BrightonPlayfield: Park = {
   id: 1323,
   name: "Brighton Playfield",
   slug: "brighton-playfield",
+  address: "6000 39th Ave S, Seattle, WA 98118",
+  comments: "",
   courts: [
     {
       id: 1323,
