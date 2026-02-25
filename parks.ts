@@ -70,8 +70,8 @@ export const BeaconHillPlayfield: Park = {
   startTime: "07:00:00",
   endTime: "21:00:00",
   location: {
-    latitude: 47.9794797,
-    longitude: -123.4847369,
+    latitude: 47.5859931,
+    longitude: -122.3153234,
   },
 };
 
