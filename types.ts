@@ -17,6 +17,8 @@ export type Park = {
   slug: string;
   address: string;
   comments: string;
+  tennisCourtsCount: number;
+  pickleballCourtsCount: number;
   courts: Court[];
   startTime: string;
   endTime: string;

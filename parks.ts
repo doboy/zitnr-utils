@@ -6,6 +6,8 @@ export const MillerPark: Park = {
   slug: "miller-playfield",
   address: "330 19th Ave E, Seattle, WA 98112",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1373,
@@ -31,6 +33,8 @@ export const MountBakerPark: Park = {
   slug: "mount-baker-park",
   address: "2521 Lake Park Dr S, Seattle, WA 98144",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1377,
@@ -59,6 +63,8 @@ export const BeaconHillPlayfield: Park = {
   slug: "beacon-hill-playfield",
   address: "1902 13th Ave S, Seattle, WA 98144",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1319,
@@ -87,6 +93,8 @@ export const BitterLakePlayfield: Park = {
   slug: "bitter-lake-playfield",
   address: "13035 Linden Ave N, Seattle, WA 98133",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 8,
   courts: [
     {
       id: 1315,
@@ -123,6 +131,8 @@ export const RainierBeachPlayfield: Park = {
   slug: "rainier-beach-playfield",
   address: "8802 Rainier Ave S, Seattle, WA 98118",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 8,
   courts: [
     {
       id: 1379,
@@ -159,6 +169,8 @@ export const MagnoliaPark: Park = {
   slug: "magnolia-park",
   address: "1461 Magnolia Blvd W, Seattle, WA 98199",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1361,
@@ -185,6 +197,8 @@ export const GreenLakeParkWest: Park = {
   slug: "green-lake-park-west",
   address: "7201 W Green Lake Dr N, Seattle, WA 98103",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 181,
@@ -211,6 +225,8 @@ export const GreenLakeParkEast: Park = {
   slug: "green-lake-park-east",
   address: "7201 E Green Lake Dr N, Seattle, WA 98115",
   comments: "",
+  tennisCourtsCount: 3,
+  pickleballCourtsCount: 8,
   courts: [
     {
       id: 2906,
@@ -242,6 +258,8 @@ export const LowerWoodlandPlayfield: Park = {
   slug: "lower-woodland-playfield",
   address: "1000 N 50th St, Seattle, WA 98103",
   comments: "",
+  tennisCourtsCount: 10,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 353,
@@ -308,6 +326,8 @@ export const LowerWoodlandPlayfieldTennis: Park = {
   slug: "lower-woodland-playfield-tennis",
   address: "1000 N 50th St, Seattle, WA 98103",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 369,
@@ -344,6 +364,9 @@ export const IngrahamHS: Park = {
   slug: "ingraham-hs",
   address: "1819 N 135th St, Seattle, WA 98133",
   comments: "",
+  tennisCourtsCount: 6,
+  // Only courts 4, 5, 6 have pickleball lines
+  pickleballCourtsCount: 6,
   courts: [
     {
       id: 1095,
@@ -390,6 +413,8 @@ export const GarfieldPlayfield: Park = {
   slug: "garfield-playfield",
   address: "532 23rd Ave, Seattle, WA 98122",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1341,
@@ -416,6 +441,8 @@ export const VolunteerPark: Park = {
   slug: "volunteer-park",
   address: "1247 15th Ave E, Seattle, WA 98112",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 363,
@@ -452,6 +479,8 @@ export const MadronaPlayground: Park = {
   slug: "madrona-playground",
   address: "3211 E Spring St, Seattle, WA 98122",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 2279,
@@ -478,6 +507,8 @@ export const SamSmithPark: Park = {
   slug: "sam-smith-park",
   address: "1400 Martin Luther King Jr Way S, Seattle, WA 98144",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1391,
@@ -504,6 +535,8 @@ export const MontlakePlayfield: Park = {
   slug: "montlake-playfield",
   address: "1618 E Calhoun St, Seattle, WA 98112",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1375,
@@ -530,6 +563,8 @@ export const RogersPlayfield: Park = {
   slug: "rogers-playfield",
   address: "2516 Eastlake Ave E, Seattle, WA 98102",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1389,
@@ -556,6 +591,8 @@ export const AYTCOutdoor: Park = {
   slug: "aytc-outdoor",
   address: "2000 Martin Luther King Jr Way S, Seattle, WA 98144",
   comments: "",
+  tennisCourtsCount: 6,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 279,
@@ -602,6 +639,8 @@ export const MadisonPark: Park = {
   slug: "madison-park",
   address: "1820 42nd Ave E, Seattle, WA 98112",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1359,
@@ -628,6 +667,8 @@ export const ObservatoryPark: Park = {
   slug: "observatory-park",
   address: "1405 Warren Ave N, Seattle, WA 98109",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1119,
@@ -654,6 +695,8 @@ export const DavidRodgersPark: Park = {
   slug: "david-rodgers-park",
   address: "2800 1st Ave W, Seattle, WA 98119",
   comments: "",
+  tennisCourtsCount: 3,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1330,
@@ -685,6 +728,8 @@ export const JeffersonParkLid: Park = {
   slug: "jefferson-park-lid",
   address: "3801 Beacon Ave S, Seattle, WA 98108",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 777,
@@ -721,6 +766,8 @@ export const WallingfordPlayfield: Park = {
   slug: "wallingford-playfield",
   address: "4219 Wallingford Ave N, Seattle, WA 98103",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1408,
@@ -747,6 +794,8 @@ export const LaurelhurstPlayfield: Park = {
   slug: "laurelhurst-playfield",
   address: "4544 NE 41st St, Seattle, WA 98105",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 1,
   courts: [
     {
       id: 1353,
@@ -783,6 +832,8 @@ export const RainierPlayfield: Park = {
   slug: "rainier-playfield",
   address: "3700 S Alaska St, Seattle, WA 98118",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1383,
@@ -819,6 +870,8 @@ export const SolsticePark: Park = {
   slug: "solstice-park",
   address: "7400 Fauntleroy Way SW, Seattle, WA 98136",
   comments: "",
+  tennisCourtsCount: 6,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1393,
@@ -865,6 +918,8 @@ export const HiawathaPlayfield: Park = {
   slug: "hiawatha-playfield",
   address: "2700 California Ave SW, Seattle, WA 98116",
   comments: "",
+  tennisCourtsCount: 3,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1346,
@@ -896,6 +951,8 @@ export const DelridgePlayfield: Park = {
   slug: "delridge-playfield",
   address: "4458 Delridge Way SW, Seattle, WA 98106",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1335,
@@ -922,6 +979,8 @@ export const DearbornPark: Park = {
   slug: "dearborn-park",
   address: "2919 S Brandon St, Seattle, WA 98108",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1333,
@@ -948,6 +1007,8 @@ export const BryantPlayground: Park = {
   slug: "bryant-playground",
   address: "4103 NE 65th St, Seattle, WA 98115",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1325,
@@ -974,6 +1035,8 @@ export const AlkiPlayfield: Park = {
   slug: "alki-playfield",
   address: "5817 SW Lander St, Seattle, WA 98116",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1146,
@@ -1000,6 +1063,8 @@ export const BallardHS: Park = {
   slug: "ballard-hs",
   address: "1418 NW 65th St, Seattle, WA 98117",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1089,
@@ -1036,6 +1101,8 @@ export const SewardPark: Park = {
   slug: "seward-park",
   address: "5900 Lake Washington Blvd S, Seattle, WA 98118",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 373,
@@ -1062,6 +1129,8 @@ export const RiverviewPlayfield: Park = {
   slug: "riverview-playfield",
   address: "7226 12th Ave SW, Seattle, WA 98106",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1387,
@@ -1088,6 +1157,8 @@ export const DiscoveryPark: Park = {
   slug: "discovery-park",
   address: "3801 Discovery Park Blvd, Seattle, WA 98199",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 2,
   courts: [
     {
       id: 1337,
@@ -1114,6 +1185,8 @@ export const SealthHSComplex: Park = {
   slug: "sealth-hs-complex",
   address: "2600 SW Thistle St, Seattle, WA 98126",
   comments: "",
+  tennisCourtsCount: 6,
+  pickleballCourtsCount: 6,
   courts: [
     {
       id: 2281,
@@ -1160,6 +1233,8 @@ export const MeadowbrookPlayfield: Park = {
   slug: "meadowbrook-playfield",
   address: "10533 35th Ave NE, Seattle, WA 98125",
   comments: "",
+  tennisCourtsCount: 6,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1367,
@@ -1206,6 +1281,8 @@ export const WaltHundleyPlayfield: Park = {
   slug: "walt-hundley-playfield",
   address: "6920 34th Ave SW, Seattle, WA 98126",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1410,
@@ -1232,6 +1309,8 @@ export const SoundviewPlayfield: Park = {
   slug: "soundview-playfield",
   address: "1590 NW 90th St, Seattle, WA 98117",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1399,
@@ -1258,6 +1337,8 @@ export const MagnoliaPlayfield: Park = {
   slug: "magnolia-playfield",
   address: "2518 34th Ave W, Seattle, WA 98199",
   comments: "",
+  tennisCourtsCount: 4,
+  pickleballCourtsCount: 8,
   courts: [
     {
       id: 1363,
@@ -1294,6 +1375,8 @@ export const GilmanPlayfield: Park = {
   slug: "gilman-playfield",
   address: "923 NW 54th St, Seattle, WA 98107",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1344,
@@ -1320,6 +1403,8 @@ export const FroulaPlayground: Park = {
   slug: "froula-playground",
   address: "7200 12th Ave NE, Seattle, WA 98115",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 0,
   courts: [
     {
       id: 1339,
@@ -1346,6 +1431,8 @@ export const BrightonPlayfield: Park = {
   slug: "brighton-playfield",
   address: "6000 39th Ave S, Seattle, WA 98118",
   comments: "",
+  tennisCourtsCount: 2,
+  pickleballCourtsCount: 4,
   courts: [
     {
       id: 1323,
